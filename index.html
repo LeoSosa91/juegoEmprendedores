@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Juego Emprendedor</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Juego Emprendedor</a>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-xs-12 mb-3 mt-3">
+                    <div class="row row-cols-4 row-cols-sm-5 row-cols-md-6 border border-dark pt-2">
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag1" class="img-thumbnail" src="assent/images/1.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag2" class="img-thumbnail" src="assent/images/2.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag3" class="img-thumbnail" src="assent/images/3.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag4" class="img-thumbnail" src="assent/images/4.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag5" class="img-thumbnail" src="assent/images/5.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag6" class="img-thumbnail" src="assent/images/6.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag7" class="img-thumbnail" src="assent/images/7.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag8" class="img-thumbnail" src="assent/images/8.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="drag9" class="img-thumbnail" src="assent/images/9.png" draggable="true"
+                                ondragstart="drag(event)" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Modelo de espiral -->
+    <!-- <div class="container mt-3">
+        <div id="ejemplo">
+            <div class="espiral">
+                <div class="parteEspiral">
+                    <div class="piezaCamino">
+                        <div class="parteEspiral">
+                            <div class="piezaCamino">
+                                <div class="parteEspiral">
+                                    <div class="piezaCamino">
+                                        <div class="parteEspiral">
+                                            <div class="piezaCamino" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                                <div class="parteEspiral">
+                                                    <div class="piezaCamino" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                                        <div class="parteEspiral"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+#ejemplo {
+    width: 100px;
+    height: 240px;
+    margin: 0 auto;
+}
+  
+.espiral, .espiral .parteEspiral {
+position: absolute;
+right: -1em;
+top: -1px;
+width: 1em;
+height: 1em;
+font-size: 0.8em;
+border-top: 1px solid #666690;
+border-left: 1px solid #666690;
+border-radius: 100% 0 0 0;
+-moz-transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
+box-sizing: border-box;
+}
+
+.espiral, .espiral .piezaCamino {
+    position: absolute;
+    right: -1em;
+    top: -1px;
+    width: 1em;
+    height: 1em;
+    font-size: 0.8em;
+    border-top: 1px solid rgb(180, 56, 56);
+    border-left: 1px solid rgb(180, 56, 56);
+    border-radius: 100% 0 0 0;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    box-sizing: border-box;
+}
+
+
+.espiral {
+font-size: 250px;
+position: relative;
+right: 0;
+}
