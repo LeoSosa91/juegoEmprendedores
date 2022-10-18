@@ -30,9 +30,9 @@ function cargarImagenes(){
     var html="";
     for(var i=1; i<=9;i++){
         if(i==1){
-        html+='<div  ' +'id='+'"img'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'"'+'class='+'"'+'carousel-item div-img active'+'"'+'><img class='+'"'+'d-block img'+'"'+'src='+'"'+'assent/images/'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'.png'+'"'+'name='+'"img'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'"></div>';
+        html+='<li><div  ' +'id='+'"img'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'"'+'class='+'"'+'div-img'+'"'+'><img class='+'"'+'d-block img'+'"'+'src='+'"'+'assent/images/'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'.png'+'"'+'name='+'"img'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'"></div></li>';
     }else{
-        html+='<div  '+'id='+'"img'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'"'+'class='+'"'+'carousel-item div-img '+'"'+'><img class='+'"'+'d-block img'+'"'+'src='+'"'+'assent/images/'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'.png'+'"'+ 'name='+'"img'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'"></div>';
+        html+='<li><div  '+'id='+'"img'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'"'+'class='+'"'+'div-img '+'"'+'><img class='+'"'+'d-block img'+'"'+'src='+'"'+'assent/images/'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'.png'+'"'+ 'name='+'"img'+arreglo_aleatorio[arreglo_aleatorio.length-1]+'"></div></li>';
        
     }
     arreglo_aleatorio.pop();}

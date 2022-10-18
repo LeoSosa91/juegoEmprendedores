@@ -22,22 +22,10 @@
     </header>
 
     <article class="">
-        <section class="section-carrusel row separacion-sections">
-
-            <div id="carouselimg" name="carouselimg" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="mt-3 carousel-inner justify-content-center" id="contenedor_imagenes">
-
-                </div>
-                <a href="#carouselimg" class="carousel-control-prev" role="button" data-slide="prev">
-
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a href="#carouselimg" class="carousel-control-next" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
+        <section class="slider-wrapper carrusel">
+            <div class="slides-container" id="contenedor_imagenes">
+                
             </div>
-
         </section>
         <section>
 
@@ -79,20 +67,12 @@
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
-  
+
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script> -->
 
-    <script>
-        var myCarousel = document.getElementById("carouselimg")
-        var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 0,
-            wrap: false,
-
-
-        })
-    </script>
+   
     <footer>
         <div class="row text-center container-fluid">
             <h1> Comodoro Conocimiento</h1>
@@ -100,19 +80,19 @@
     </footer>
     <div class="modal" tabindex="-1" id="modal">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">!COMPLETADO!</h5>
-            </div>
-            <div class="modal-body">
-              <p>Has aprendido a como fallar gratis... o al menos barato ^.^'</p>
-              <h4 id="fallas"></h4>
-              <div id="imgporfallas">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">!COMPLETADO!</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Has aprendido a como fallar gratis... o al menos barato ^.^'</p>
+                    <h4 id="fallas"></h4>
+                    <div id="imgporfallas">
 
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="reset" class="btn btn-secondary" onclick="location.replace('index.html');"">Volver a intentar</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary" onclick="location.replace('index.html');"">Volver a intentar</button>
             </div>
           </div>
         </div>
