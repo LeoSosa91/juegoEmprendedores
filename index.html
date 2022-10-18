@@ -6,166 +6,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="scripts.js"></script>
     <title>Juego Emprendedor</title>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top bg-light">
-            <div class="container-fluid">
+
+<body onload="cargarImagenes();verificarOpcion()">
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg sticky-top bg-dark row">
+            <div class="d-flex w-100 align-items-center justify-content-center  text-center">
                 <a class="navbar-brand" href="#">Juego Emprendedor</a>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                </div> -->
+                <img src="assent/images/comodoro_conocimiento.png" style="width:25%" alt="">
             </div>
         </nav>
     </header>
-    <main>
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-xs-12 mb-3 mt-3">
-                    <div class="row row-cols-4 row-cols-sm-5 row-cols-md-6 border border-dark pt-2">
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag1" class="img-thumbnail" src="assent/images/1.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag2" class="img-thumbnail" src="assent/images/2.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag3" class="img-thumbnail" src="assent/images/3.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag4" class="img-thumbnail" src="assent/images/4.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag5" class="img-thumbnail" src="assent/images/5.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag6" class="img-thumbnail" src="assent/images/6.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag7" class="img-thumbnail" src="assent/images/7.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag8" class="img-thumbnail" src="assent/images/8.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                        <div class="col mb-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="drag9" class="img-thumbnail" src="assent/images/9.png" draggable="true"
-                                ondragstart="drag(event)" alt="" srcset="">
-                        </div>
-                    </div>
+
+    <article class="">
+        <section class="section-carrusel row separacion-sections">
+
+            <div id="carouselimg" name="carouselimg" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="mt-3 carousel-inner justify-content-center" id="contenedor_imagenes">
+
                 </div>
-                <div class="col-sm-12 col-xs-12">
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col border border-dark" ondrop="drop(event)" ondragover="allowDrop(event)">soltar</div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                    </div>
-                </div>
+                <a href="#carouselimg" class="carousel-control-prev" role="button" data-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a href="#carouselimg" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
             </div>
-        </div>
-    </main>
-    <!-- Modelo de espiral -->
-    <!-- <div class="container mt-3">
-        <div id="ejemplo">
-            <div class="espiral">
-                <div class="parteEspiral">
-                    <div class="piezaCamino">
-                        <div class="parteEspiral">
-                            <div class="piezaCamino">
-                                <div class="parteEspiral">
-                                    <div class="piezaCamino">
-                                        <div class="parteEspiral">
-                                            <div class="piezaCamino" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                                <div class="parteEspiral">
-                                                    <div class="piezaCamino" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                                        <div class="parteEspiral"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+        </section>
+        <section>
+
+        </section>
+
+        <!-- <section class="row">
+            <div class="col-12" id="contenedor_imagenes" ></div>
+        </section> -->
+
+        <section class="mt-5 separacion-sections mb-5">
+            <div class="container text-center row  mb-5 cont-img">
+                <img src="assent/images/caracol.png" class="imgcaracol mx-auto d-block" alt="">
+                <img src="assent/images/t1.png" class="imgcaracol " alt="" id="t1">
+                <img src="assent/images/t2.png" class="imgcaracol " alt="" id="t2">
+                <img src="assent/images/t3.png" class="imgcaracol " alt="" id="t3">
+                <img src="assent/images/t4.png" class="imgcaracol " alt="" id="t4">
+                <img src="assent/images/t5.png" class="imgcaracol " alt="" id="t5">
+                <img src="assent/images/t6.png" class="imgcaracol " alt="" id="t6">
+                <img src="assent/images/t7.png" class="imgcaracol " alt="" id="t7">
+                <img src="assent/images/t8.png" class="imgcaracol " alt="" id="t8">
+                <img src="assent/images/t9.png" class="imgcaracol " alt="" id="t9">
+
             </div>
+        </section>
+    </article>
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+        crossorigin="anonymous"></script> -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+  
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+
+    <script>
+        var myCarousel = document.getElementById("carouselimg")
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 0,
+            wrap: false,
+
+
+        })
+    </script>
+    <footer>
+        <div class="row text-center container-fluid">
+            <h1> Comodoro Conocimiento</h1>
         </div>
-    </div> -->
+    </footer>
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">!COMPLETADO!</h5>
+            </div>
+            <div class="modal-body">
+              <p>Has aprendido a como fallar gratis... o al menos barato ^.^'</p>
+              <h4 id="fallas"></h4>
+              <div id="imgporfallas">
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-secondary" onclick="location.replace('index.html');"">Volver a intentar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
 </body>
+
+
+
+
+
+
+
 
 </html>
